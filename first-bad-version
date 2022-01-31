@@ -27,3 +27,18 @@ public class Solution : VersionControl {
         return 1;
     }
 }
+
+// Best case: O(1)
+// In the best case, the first version is the bad version and therefore the amount of times
+// IsBadVersion is called is constant.
+
+// Worst case: O(n)
+// In the worst case, the bad version is the last version. Therefore it will be the maximum
+// number of times IsBadVersion can be called, which is n times. It has a linear relationship.
+
+// Expected case: O(n)
+// In the expected case, as we check for bad versions, the number of versions we still need to 
+// look through decreases linearly. It searches through elements linearly. 
+// n, n-1, n-2, etc.
+
+// Better solution: To use a binary search. This would make it faster with an expected time of O(log n).
