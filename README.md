@@ -1,2 +1,2 @@
 # algo-practice
-Work on algorithm and data structure problems in C#
+Work on short problems
